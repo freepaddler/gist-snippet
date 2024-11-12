@@ -27,8 +27,8 @@ public class SnippetNodeDTO extends SimpleNode {
     private Icon publicIcon = IconLoader.getIcon("/images/public.png", SnippetNodeDTO.class);
     private Icon secretIcon = IconLoader.getIcon("/images/secret.png", SnippetNodeDTO.class);
 
-    public static final Pattern TITLE_PATTERN = Pattern.compile("#(.+)#");
-    public static final Pattern TAG_PATTERN = Pattern.compile("\\[([^\\[\\]]+)\\]");
+    public static final Pattern TITLE_PATTERN = Pattern.compile("\\[([^\\[\\]]+)\\]");
+    public static final Pattern TAG_PATTERN = Pattern.compile("#([^\\s]+)");
 
     private ScopeEnum scope;
     private boolean visible = true;
