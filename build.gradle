@@ -9,7 +9,7 @@ plugins {
     id 'org.jetbrains.intellij' version '1.10.2'
 }
 
-group 'com.chuntung.plugin'
+group 'net.vchu.plugin'
 version "${version}"
 
 sourceCompatibility = JavaVersion.VERSION_1_8
@@ -29,7 +29,7 @@ dependencies {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    pluginName = "Gist Snippet"
+    pluginName = "Gist Snippet Lepton"
     version = ideaVersion
     plugins = ["org.jetbrains.plugins.github"]
     sameSinceUntilBuild = Boolean.valueOf(isEAP)
